@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deans Bistro</title>
+<link rel="stylesheet" href="themes/mytheme.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="themes/slider.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="themes/slider.js"></script>
+
+</head>
+<body>
+	<div id="home" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <!-- Logo for front page  -->
+	  <div role="main" class="ui-content">
+		<img style="position: relative; width:50%; Left:50%; transform: translate(-50%, -0%);" src="logo3.jpg" is="image">
+		<!-- Navigation list for linked webpages -->
+		<ul data-role="listview" data-inset="true">
+		  <li data-role="list-divider">Options</li>
+		  <li>
+			<a href="#menu" data-transition="slidedown">Menu</a>
+		  </li>
+		  <li>
+			<a href="#gallery" data-transition="slidedown">Gallery</a>
+		  </li>
+		  <li>
+			<a href="#contact" data-transition="slidedown">Contact</a>
+		  </li>
+		  <li>
+			<a href="#location" data-transition="slidedown">Location</a>
+		  </li>
+		</ul>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="menu" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <!-- Search function to filter menu (list) -->
+	  <div role="main" class="ui-content">
+		<form class="ui-filterable">
+			<input id="filter" data-type="search"
+		</form>
+		<ul data-role="listview" data-inset="true" data-filter="true" data-input="#filter">
+		  <li data-role="list-divider">Burgers </li>
+		  <li>
+			<a href="#burger1">Beef burger</a>
+		  </li>
+		  <li>
+			<a href="#burger2">Chicken Burger</a>
+		  </li>
+		  <li>
+			<a href="#burger3">BLT</a>
+		  </li>
+		  <li data-role="list-divider">Pizza </li>
+		  <li>
+			<a href="#pizza1">Margheritta</a>
+		  </li>
+		  <li>
+			<a href="#pizza2">Hawain</a>
+		  </li>
+		  <li>
+			<a href="#pizza3">Supreme</a>
+		  </li>
+		  <li data-role="list-divider">Sides </li>
+		  <li>
+			<a href="#sides1">Chips</a>
+		  </li>
+		  <li>
+			<a href="#sides2">Garlic bread</a>
+		  </li>
+		  <li>
+			<a href="#sides3">Calimari</a>
+		  </li>
+		  <li data-role="list-divider">Drinks </li>
+		  <li>
+			<a href="#drinks1">Coke</a>
+		  </li>
+		  <li>
+			<a href="#drinks2">Beer</a>
+		  </li>
+		  <li>
+			<a href="#drinks3">Water</a>
+		  </li>
+		</ul>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	
+	<div id="gallery" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+		<div data-role="header" data-position="fixed">
+			<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+			<h1>Deans Food</h1>
+			<a href="#home" data-icon="check">Home</a>
+		</div>
+	  <h1>Food Gallery</h1>
+	  <!-- Code for slider handled by js -->
+		<div id="slider">
+		  <a href="#" class="control_next">></a>
+		  <a href="#" class="control_prev">
+			<</a>
+			  <ul>
+				<li>
+					<img style="width:100%;" src="test1.jpg">          
+				</li>
+				<li>
+					<img style="width:100%;"  src="test2.jpg">          
+				</li>
+				<li>
+					<img style="width:100%;"  src="test3.jpg">          
+				</li>
+				<li>
+					<img style="width:100%;"  src="test4.jpg">          
+				</li>
+			  </ul>
+		</div>
+		<!-- Footer with linked buttons -->
+		<div data-role="footer" data-position="fixed" data-id="footer">
+			<a class="ui-btn-left" href="#feedback">Feedback</a>
+			<a class="ui-btn-right" href="#about">About Developer</a>
+			<h3>Deans Food &copy;</h3>
+		</div>
+	</div>
+	
+	<div id="contact" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	  <div data-role="main" class="ui-content">
+		<h3>Contact Us!</h3>
+		<!-- From for contact response -->
+		<form>
+		  <label for="contact">Send us a message</label>
+		  <textarea name="contact" id="contact" placeholder="Type your question in here!"></textarea>
+		  <input type="submit" name="go" id="go" value="Submit Question!">
+		</form>
+	  </div>
+	  <!-- onclick call function -->
+	  <div id="call us">
+			<a href="tel:0435926986"  data-role="button" data-icon="tel"> Call us </a>
+		</div>
+	</div>
+	
+	<div id="location" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+		<h1>Location</h1>
+		<p>Want to know where we are located?
+		Click the button below!</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	  <!-- on click google maps locator -->
+	  <div id="maps">
+			<a href="https://www.google.com.au/maps/place/Deakin+University/@-37.8478435,145.114873,17z/data=!3m1!4b1!4m2!3m1!1s0x6ad6405e2d61e80f:0xf0456760532dab0" data-role="button" data-icon="maps"> Find us on Google Maps </a>
+		</div>
+	</div>
+	
+	<div id="about" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Information about developer -->
+		<h1>About the developer</h1>
+		<p>My name is Dean Gardiner and i am currently doing an bachelor of IT (sercurity) At deakin university. I have created this app for my first assignment for mobile computing!</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="feedback" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	  <div data-role="main" class="ui-content">
+		<h3>Feedback!</h3>
+		<!-- Form function for feedback -->
+		<form>
+		  <label for="contact">Provide your feedback below</label>
+		  <textarea name="feedback" id="feedback" placeholder="Your food was amazing!"></textarea>
+		  <label for="rating">Rate us out of 5</label>
+		  <!-- Slider for rating -->
+		  <input type="range" name="rating" id="rating" min="0" max="5" />
+		  <input type="submit" name="go" id="go" value="Submit Feedback!">
+		</form>
+	  </div>
+	</div>
+	
+	<div id="pizza1" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Margheritta Pizza</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>mozzarella cheese and rich tomato sauce on a thick crust</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="pizza2" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Hawaiian Pizza</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Smoked ham, pineapple and mozzarella cheese on a thick crust</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="pizza3" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Supreme Pizza</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Smoked ham, pineapple, black olives, salami, capsicum and mozzarella cheese on a thick crust</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="burger1" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Beef Burger</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>100% angus beef pattie, with lettuce, tomato, onion, cheese on a toasted bun</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="burger2" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Chicken Burger</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Breast chicken pattie, with lettuce, tomato, onion, cheese on a toasted bun</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="burger3" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">BLT</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Bacon, lettuce and tomato on toasted bread</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="sides1" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Chips</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Hand cut in house chips (served with ketchup) </p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="sides2" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Garlic bread</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Fresh garlic and Mozzarella cheese on toaster baguette </p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="sides3" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Calamari</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Fresh calamari deepfried in our beer batter </p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>>
+	  </div>
+	</div>
+	
+	<div id="drinks1" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Coke</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Served in a glass with ice</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="drinks2" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Beer</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Served in the bottle with a slice of lemon</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+	
+	<div id="drinks3" data-role="page" data-theme="d">
+	<!-- Header information and navigation buttons  -->
+	  <div data-role="header" data-position="fixed">
+		<a href="#" class="ui-btn" data-rel="back">Go Back</a>
+		<h1>Deans Food</h1>
+		<a href="#home" data-icon="check">Home</a>
+	  </div>
+	  <div role="main" class="ui-content">
+	  <!-- Image and information for selected item -->
+		<h1 is="gk-text">Water</h1>
+		<img style="width:70%;" src="http://jqmdesigner.appspot.com/images/image.png" is="image">
+		<p>Served in a glass, your choice of tap or sparkling</p>
+	  </div>
+	  <!-- Footer with linked buttons -->
+	  <div data-role="footer" data-position="fixed" data-id="footer">
+		<a class="ui-btn-left" href="#feedback">Feedback</a>
+		<a class="ui-btn-right" href="#about">About Developer</a>
+		<h3>Deans Food &copy;</h3>
+	  </div>
+	</div>
+</body>
+</html>
